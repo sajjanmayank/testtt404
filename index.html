@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404squaD</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-image: url('teambg.jpeg'); /* Set the background image */
+      background-size: cover; /* Ensure the background covers the entire page */
+      background-position: center; /* Center the background image */
+      background-repeat: no-repeat; /* Prevent the image from repeating */
+      color: #ffff;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Container for title and button */
+    .header-container {
+      background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+      width: 100%;
+      padding: 10px 0; /* Reduced padding for a smaller header */
+      position: absolute;
+      top: 0;
+      left: 0;
+      text-align: center;
+      z-index: 10; /* Ensure it stays on top of the background image */
+    }
+
+    h1 {
+      font-size: 35px; /* Reduced font size for a smaller header */
+      margin: 0;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Back Button */
+    .back-button {
+      display: inline-block;
+      margin-top: 10px; /* Reduced margin for a closer back button */
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 25px;
+      font-size: 16px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .back-button:hover {
+      background-color: #0056b3;
+      transform: scale(1.05);
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+      margin: 120px auto 30px; /* Adjusted margin-top to give space below the header */
+      max-width: 1200px;
+    }
+
+    .member-card {
+      background: linear-gradient(145deg, #fff, #fff);
+      border-radius: 15px;
+      width: 250px;
+      padding: 20px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      color: #333;
+      overflow: hidden;
+      position: relative;
+      text-align: center;
+    }
+
+    /* Square profile picture */
+    .member-card img {
+      width: 150px;
+      height: 200px;
+      margin: 0 auto;
+      transition: transform 0.3s ease;
+    }
+
+    .member-card h3 {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 15px 0 10px;
+    }
+
+    .member-card a {
+      text-decoration: none;
+      color: #007bff;
+    }
+
+    /* LinkedIn logo round */
+    .linkedin-logo {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      margin-top: 10px;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+      display: inline-block;
+    }
+
+    /* Hover Effect */
+    .member-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .member-card:hover img {
+      transform: scale(1.1);
+    }
+
+    .member-card:hover .linkedin-logo {
+      transform: scale(1.2);
+      opacity: 0.9;
+    }
+
+    /* Footer Styling */
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      font-size: 14px;
+      margin-top: auto;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .member-card {
+        width: 200px;
+        padding: 15px;
+      }
+
+      .member-card img {
+        width: 100px;
+        height: 100px;
+      }
+
+      .member-card h3 {
+        font-size: 18px;
+      }
+
+      .linkedin-logo {
+        width: 10px;
+        height: 10px;
+      }
+
+      .back-button {
+        font-size: 14px;
+      }
+
+      .container {
+        width: 100%;
+        padding: 10px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 32px;
+      }
+
+      .container {
+        gap: 10px;
+      }
+
+      .member-card {
+        width: 180px;
+        padding: 10px;
+      }
+
+      .member-card img {
+        width: 70px;
+        height: 70px;
+      }
+
+      .member-card h3 {
+        font-size: 16px;
+      }
+
+      .linkedin-logo {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header-container">
+    <h1><b>404squaD</b></h1>
+    <a href="https://sajjanmayank.github.io/miniproject3sem" class="back-button">Back to Home</a>
+  </div>
+
+  <!-- Single container for all members -->
+  <div class="container">
+    <!-- Member 1 -->
+    <div class="member-card">
+      <img src="inshaaa.jpg" alt="Member 1 Photo">
+      <h3>Insha Shahnawaz</h3>
+      <a href="https://www.linkedin.com/in/insha-shahnawaz-645221295" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn Logo" class="linkedin-logo">
+      </a>
+    </div>
+    
+    <!-- Member 2 -->
+    <div class="member-card">
+      <img src="ishaaa.jpeg" alt="Member 2 Photo">
+      <h3>Isha Bhandari</h3>
+      <a href="https://www.linkedin.com/in/isha-bhandari-b473b732a" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn Logo" class="linkedin-logo">
+      </a>
+    </div>
+    
+    <!-- Member 3 -->
+    <div class="member-card">
+      <img src="jeeteshhh.jpeg" alt="Member 3 Photo">
+      <h3>Jeetesh Kumar Thakur</h3>
+      <a href="https://www.linkedin.com/in/jeetesh-kumar-thakur-84a0242a5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn Logo" class="linkedin-logo">
+      </a>
+    </div>
+    
+    <!-- Member 4 (Mayank) -->
+    <div class="member-card">
+      <img src="mayankkk.jpeg" alt="Member 4 Photo">
+      <h3>Mayank Gopal Wanjari</h3>
+      <a href="https://www.linkedin.com/in/mayankgopalwanjari/" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn Logo" class="linkedin-logo">
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    © 404squaD
+  </footer>
+
+</body>
+</html>
